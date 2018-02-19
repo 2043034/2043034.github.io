@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IP Info</title>
+<script>
+  function table(){
+document.getElementById("platform").innerHTML = navigator.platform;
+document.getElementById("provider").innerHTML = navigator.appName;
+document.getElementById("agent").innerHTML = navigator.userAgent;
+}
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://ident.me", true);
+xhr.onload = function (e) {
+  if (xhr.readyState === 4) {
+    if (xhr.status === 200) {
+    var ip = xhr.responseText;
+      document.getElementById("ip").innerHTML = "<a href='http://ip-tracker.org/?ip=" + ip + "'>" + ip + "</a>";
+      // setTimeout(table, 80)
+      table();
+    } else {
+      console.error(xhr.statusText);
+    }
+  }
+};
+xhr.onerror = function (e) {
+  console.error(xhr.statusText);
+};
+xhr.send(null);
+
+</script>
+    </head>
+    <body>
+        <table colspan="2" border="1">
+            <tr>
+                <th>IP</th>
+                <th>Platform</th>
+                <th>Provider</th>
+                <th>User Agent</th>
+            </tr>
+            <tr>
+                <td id="ip"></td>
+                <td id="platform"></td>
+                <td id="provider"></td>
+                <td id="agent"></td>
+            </tr>
+        </table>
+        <style>
+body {
+    margin: 0;
+}
+td, th {
+   overflow: auto; 
+   white-space: nowrap;
+   padding: 5px;
+   text-align: left;
+}
+th {
+   background-color: #DDD;
+}
+table {
+   border-collapse: collapse; 
+   overflow: auto; 
+   white-space: nowrap;
+}
+        </style>
+    </body>
+</html>
