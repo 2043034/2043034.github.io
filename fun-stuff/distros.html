@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+
+
+    <head>
+
+
+
+        <!-- Metatags -->
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv= "X-UA-Compatible" content = "IE=edge">
+
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+
+
+
+        <!-- Title -->
+
+        <title>Linux Lovers - Distros</title>
+
+<style>
+
+    .accordion { margin: 0 auto; max-width: 95%; }
+
+
+
+#accordionOne { text-align: center; border-bottom: 1px solid #bbb; border-top: 1px solid #bbb; }
+
+#accordionOne > h4 { background-color: #dedede; margin: 0; margin-top: 0px; padding: 20px; font-size: 2em; color: #777;cursor: pointer; }
+
+#accordionOne > p { font-size: 1.2em; margin: 0; padding: 20px; box-sizing: border-box; color: #333; line-height: 35px; }
+
+
+
+#accordionTwo { text-align: center; border-bottom: 1px solid #bbb; border-top: 1px solid #bbb; }
+
+#accordionTwo > h4 { background-color: #dedede; margin: 0; padding: 20px; font-size: 2em; color: #777;cursor: pointer; }
+
+#accordionTwo > p { font-size: 1.2em; margin: 0; padding: 20px; box-sizing: border-box; color: #333; }
+
+
+
+#accordionThree { text-align: center; border-bottom: 1px solid #bbb; border-top: 1px solid #bbb; }
+
+#accordionThree > h4 { background-color: #dedede; margin: 0; padding: 20px; font-size: 2em; color: #777;cursor: pointer; }
+
+#accordionThree > p { font-size: 1.2em; margin: 0; padding: 20px; box-sizing: border-box; color: #333; }
+
+
+
+#accordionFour { text-align: center; border-bottom: 1px solid #bbb; border-top: 1px solid #bbb; }
+
+#accordionFour > h4 { background-color: #dedede; margin: 0; padding: 20px; font-size: 2em; color: #777;cursor: pointer; }
+
+#accordionFour > p { font-size: 1.2em; margin: 0; padding: 20px; box-sizing: border-box; color: #333; }
+
+
+
+#accordionFive { text-align: center; border-bottom: 1px solid #bbb; border-top: 1px solid #bbb; }
+
+#accordionFive > h4 { background-color: #dedede; margin: 0; padding: 20px; font-size: 2em; color: #777;cursor: pointer; }
+
+#accordionFive > p { font-size: 1.2em; margin: 0; padding: 20px; box-sizing: border-box; color: #333; }
+
+
+
+/* ----------- Logo ----------- */
+
+
+
+#logo { display: block; margin: 0 auto; width: 180px; }
+
+
+
+/* ----------- Generals ----------- */
+
+
+
+body { background-color: #eee; font-family: arial, sans-serif; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; color: #17F67B; }
+
+small {border: 1px solid #ccc; width: 200px; display: block; margin: 20px auto; }
+
+.open { display: block; }
+
+.close { display: none; }
+
+#linus { color: #12DFA8; }
+
+</style>
+
+<script>
+
+                                  window.onload = function () 
+
+{
+
+    // Accordion function
+
+    var title = document.getElementById('title');
+
+    var paragraph = document.getElementById('paragraph');
+
+
+
+    title.onclick = function () 
+
+    {
+
+        if (paragraph.className == "close") {
+
+            paragraph.className = "open";
+
+        } else {
+
+            paragraph.className = "close";
+
+        }
+
+    }
+
+
+
+    var titleTwo = document.getElementById('titleTwo');
+
+    var paragraphTwo = document.getElementById('paragraphTwo');
+
+    titleTwo.onclick = function () { if (paragraphTwo.className == "close") paragraphTwo.className = "open"; else paragraphTwo.className = "close"; }
+
+
+
+    var titleThree = document.getElementById('titleThree');
+
+    var paragraphThree = document.getElementById('paragraphThree');
+
+    titleThree.onclick = function () { if (paragraphThree.className == "close") paragraphThree.className = "open"; else paragraphThree.className = "close"; }
+
+
+
+    var titleFour = document.getElementById('titleFour');
+
+    var paragraphFour = document.getElementById('paragraphFour');
+
+    titleFour.onclick = function () { if (paragraphFour.className == "close") paragraphFour.className = "open"; else paragraphFour.className = "close"; }
+
+
+
+    var titleFive = document.getElementById('titleFive');
+
+    var paragraphFive = document.getElementById('paragraphFive');
+
+    titleFive.onclick = function () { if (paragraphFive.className == "close") paragraphFive.className = "open"; else paragraphFive.className = "close"; }
+
+
+
+}
+
+
+
+// More informations
+
+
+
+/**************************************************************************
+
+
+
+Please don't comment this code with missing Distro, 
+
+because i inserted only Distro that provided the ISO image,
+
+you can click and download directly from here, 
+
+if you want to offer your contribute, paste some ISO in the comments, 
+
+i will put your name in Extra Credits.
+
+
+
+All links should be contains the last version of OS.
+
+All links should be provided from the official sites.
+
+Distro contrassigned as "(LIVE)" should works only in Live, naturally.
+
+Feel free to save this code for reference as PRIVATE.
+
+
+
+Deepin 15.4 will not provide 32-bit non-commercial ISO image download for community.
+
+Elementary OS provided a different version for 32-bit system.
+
+Trenta OS is a distro under development, very very very similar to Mac: https://os.trenta.io/
+
+Arch Linux for 32 bit systems are deprecated.
+
+
+
+Don't download Distro Linux just to try, i mean... 
+
+be careful, read about your Distro and then... download it.
+
+
+
+All descriptions are provided by external resources:
+
+https://www.unixmen.com/kali-linux-review/
+
+https://n0where.net/parrot-security-os/
+
+http://www.techradar.com/reviews/caine-80
+
+https://www.concise-courses.com/blackarch-linux/
+
+https://en.wikipedia.org/
+
+
+
+**************************************************************************/
+
+</script>
+
+    </head>
+
+
+
+    <body>
+
+
+
+        <div class="accordion">
+
+            
+
+            <img src="http://www.pngall.com/wp-content/uploads/2016/04/Linux-Hosting-Transparent.png" alt = "logo" id = "logo" />
+
+
+
+            <div id="accordionOne">
+
+                <h4 id = "title"> Hacking </h4>
+
+                <p id = "paragraph" class = "close">
+
+                    <!-- Kali Linux -->
+
+                    Kali Linux is Open-Source project which is funded and maintained by Offensive Security. <br> <br>
+
+                    Kali Linux is Debian-Based distro that continues where the BackTrack stopped. <br> <br>
+
+                    You can download latest version of Kali Linux from the official site or from here: <br> <br>
+
+                    Kali Linux (64 bit)  - <a href="http://cdimage.kali.org/kali-2017.1/kali-linux-2017.1-amd64.iso"> Download </a> <br>
+
+                    Kali Linux (32 bit)  - <a href="http://cdimage.kali.org/kali-2017.1/kali-linux-2017.1-i386.iso"> Download </a> <br>
+
+                    Kali Linux Light (64 bit)  - <a href="http://cdimage.kali.org/kali-2017.1/kali-linux-light-2017.1-amd64.iso">Download </a> <br>
+
+                    Kali Linux Light (32 bit)  - <a href="http://cdimage.kali.org/kali-2017.1/kali-linux-light-2017.1-i386.iso"> Download </a> <small></small>
+
+                    <!-- Parrot OS -->
+
+                    Parrot Security OS is a distro designed for people who love programming. <br> <br>
+
+                    It comes with interpreters and compilers for the most famous programming languages. <br> <br>
+
+                    You can download latest version of Parrot OS from the official site or from here: <br> <br>
+
+                    Parrot OS (64 bit) - <a href="https://mirrordirector.archive.parrotsec.org/parrot/iso/3.5/Parrot-full-3.5_amd64.iso">Download</a> <br>
+
+                    Parrot OS (32 bit) - <a href="https://mirrordirector.archive.parrotsec.org/parrot/iso/3.5/Parrot-full-3.5_i386.iso">Download</a> <small></small>
+
+                    <!-- Caine 8.0 (LIVE) -->
+
+                    Caaine 8.0 is positively packed with forensics tools and dozens of nifty custom scripts to help analyse files. <br> <br>
+
+                    You can download latest version of Caine 8.0 from the official site or from here: <br> <br>
+
+                    Caine 8.0 (LIVE) - <a href="http://caine.mirror.garr.it/mirrors/caine/caine8.0.iso">Download</a> <small></small>
+
+                    <!-- Black Arch -->
+
+                    Black Arch is a lightweight expansion to Arch Linux for penetration testers and security researchers. <br> <br>
+
+                    Black Arch has been designed to make our jobs all the much easier by centralizing all pentesting tools under one roof. <br> <br>
+
+                    You can download latest version of Black Arch from the official site or from here: <br> <br>
+
+                    Black Arch (64 bit) - <a href="http://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarchlinux-live-2017.03.01-x86_64.iso">Download</a> <br>
+
+                    Black Arch (32 bit) - <a href="http://ftp.halifax.rwth-aachen.de/blackarch/iso/blackarchlinux-live-2017.03.01-i686.iso">Download</a> <br>
+
+                </p>
+
+            </div>
+
+
+
+            <div id="accordionTwo">
+
+                <h4 id = "titleTwo">Beginner</h4>
+
+                <p id = "paragraphTwo" class = "close">
+
+                    <!-- Ubuntu -->
+
+                    Ubuntu 16.04 is an LTS release, that means it's supported for five years. <br> <br>
+
+                    Ubuntu is one of the most popular OS of Linux. <br> <br>
+
+                    You can download Ubuntu 16.04 from the official site or from here: <br> <br> <br>
+
+                    Ubuntu 16.04 (64 bit) - <a href="http://releases.ubuntu.com/16.04/ubuntu-16.04.2-desktop-amd64.iso"> Download </a> <br> <br>
+
+                    Ubuntu 16.04 (32 bit) - <a href="http://releases.ubuntu.com/16.04/ubuntu-16.04.2-desktop-i386.iso
+
+                    "> Download </a> <small></small>
+
+                    <!-- Lubuntu -->
+
+                    Lubuntu is a lightweight Linux distribution based on Ubuntu. <br> <br>
+
+                    Lubuntu is intended to be a low-system-requirement. <br> <br>
+
+                    You can download latest version of Lubuntu from the official site or from here: <br> <br> <br>
+
+                    Lubuntu 16.04 (64 bit) - <a href="http://cdimage.ubuntu.com/lubuntu/releases/17.04/release/lubuntu-17.04-desktop-amd64.iso"> Download </a> <br> <br>
+
+                    Lubuntu 16.04 (32 bit) - <a href="http://cdimage.ubuntu.com/lubuntu/releases/17.04/release/lubuntu-17.04-desktop-i386.iso"> Download </a> <small></small>
+
+                    <!-- Linux Mint -->
+
+                    Linux Mint is a community-driven Linux distribution based on Debian and Ubuntu. <br> <br> 
+
+                    It strives to be a "modern, elegant and easy to use. <br> <br>
+
+                    You can download latest version of Linux Mint from the official site or from here: <br> <br> <br>
+
+                    Linux Mint (64 bit) - <a href="http://mirrors.advancedhosters.com/linuxmint/isos/stable/18.1/linuxmint-18.1-cinnamon-64bit.iso"> Download </a> <br> <br>
+
+                    Linux Mint (32 bit) - <a href="http://mirrors.advancedhosters.com/linuxmint/isos/stable/18.1/linuxmint-18.1-cinnamon-32bit.iso"> Download </a>
+
+                </p>
+
+            </div>
+
+
+
+            <div id="accordionThree">
+
+                <h4 id = "titleThree"> Mac Style </h4>
+
+                <p id = "paragraphThree" class = "close">
+
+                    <!-- Deepin -->
+
+                    Deepin is one of the most popular Chinese Linux distributions and it is based on Debian. <br> <br>
+
+                    The goal with deepin is to make it easy to use and install onto a computer. <br> <br>
+
+                    You can download latest version of Deepin for 64 bit systems from the official site or from here: <br> <br> <br>
+
+                    Deepin (64 bit) - <a href="http://cdimage.deepin.com/releases/15.4/deepin-15.4-amd64.iso">Download</a> <small></small>
+
+                    <!-- Elementary OS -->
+
+                    Elementary OS is a Linux distribution based on Ubuntu. <br> <br>
+
+                    Human Interface Guidelines of the elementary OS project focus on immediate usability <br> <br>
+
+                    You can download latest version of Elementary OS from the official site or from here: <br> <br> <br>
+
+                    Elementary OS (64 bit) - <a href="https://fra1.dl.elementary.io/download/MTQ5MzQwMTA1OA==/elementaryos-0.4-stable-amd64.20160921.iso">Download</a> <br> <br>
+
+                    Elementary OS (32 bit) - <a href="https://us.softpedia-secure-download.com/dl/69072905aac3a3e0436fbee3ebd01f53/59037f62/500067717/linux/elementaryos-0.3.2-stable-i386.20151209.iso">Download</a> <small></small>
+
+                    <!-- Macpup (LIVE) -->
+
+                    Macpup is an operating system based on Puppy Linux <br> <br>
+
+                    The Macpup Enlightenment interface as installed features a Mac OS X-like <br> <br>
+
+                    The live .iso only uses 184MB of RAM. <br> <br>
+
+                    You can download latest version of Macpup from the official site or from here: <br> <br> <br>
+
+                    Macpup (LIVE) - <a href="http://macpup.org/downloads/Macpup_550.iso"> Download </a> 
+
+                </p>
+
+            </div>
+
+
+
+            <div id="accordionFour">
+
+                <h4 id = "titleFour"> Light </h4>
+
+                <p id = "paragraphFour" class = "close">
+
+                    <!-- Puppy Linux -->
+
+                    Puppy Linux is an operating system that focuses on ease of use and minimal memory footprint. <br> <br>
+
+                    Puppy Linux is a complete operating system bundled with a collection of applications suited to general use tasks <br> <br>
+
+                    You can download latest version of Puppy Linux from the official site or from here: <br> <br> <br>
+
+                    Puppy Linux (128 MB LIVE) - <a href="http://distro.ibiblio.org/puppylinux/puppy-5.0/lupu-500.iso">Download</a><small></small>
+
+                    <!-- SliTaz -->
+
+                    SliTaz GNU/Linux is a lightweight GNU/Linux distribution, suitable for use on older hardware. <br> <br>
+
+                    The name SliTaz stands for "Simple Light Incredible Temporary Autonomous Zone". <br> <br>
+
+                    You can download latest version of SliTaz from the official site or from here: <br> <br> <br>
+
+                    SliTaz (64 bit) - <a href="http://mirror.slitaz.org/iso/rolling/slitaz-rolling-core64.iso">Download</a> <br> <br>
+
+                    SliTaz (32 bit) - <a href="http://mirror.slitaz.org/iso/rolling/slitaz-rolling.iso">Download</a> <small></small>
+
+                    <!-- Tiny Core -->
+
+                    Tiny Core Linux (TCL) is a minimal Linux operating system <br> <br>
+
+                    The distribution is notable for its small size (11 - 16MB) <br> <br>
+
+                    You can download latest version of Tiny Core Linux from the official site or from here: <br> <br> <br>
+
+                    Tiny Core (11MB) - <a href="http://tinycorelinux.net/8.x/x86/release/Core-current.iso">Download</a><small></small>
+
+                    <!-- Porteus -->
+
+                    Porteus is a portable operating system based on Slackware. <br> <br>
+
+                    It does not require installation and can be run from fixed and removable media. <br> <br>
+
+                    You can download latest version of Porteus from the official site or from here: <br> <br> <br>
+
+                    Porteus (271 MB 64 bit) - <a href="https://mirrors.dotsrc.org/porteus/x86_64/Porteus-v3.2/Porteus-CINNAMON-v3.2.2-x86_64.iso"> Download </a> <br> <br>
+
+                    Porteus (271 MB 32 bit) - <a href="https://mirrors.dotsrc.org/porteus/i586/archive/Porteus-v3.2.1/Porteus-CINNAMON-v3.2.1-i586.iso"> Download </a> <small></small>
+
+                    <!-- Peppermint -->
+
+                    Peppermint Linux OS is a cloud-centric OS based on Lubuntu. <br> <br>
+
+                    Peppermint's developers have written about their principles of providing a familiar environment for newcomers to Linux <br> <br>
+
+                    You can download latest version of Porteus from the official site or from here: <br> <br> <br>
+
+                    Peppermint (64 bit) - <a href="https://peppermintos.com/iso/Peppermint-7-20170321-amd64.iso">Download</a><br><br>
+
+                    Peppermint (32 bit) - <a href="https://peppermintos.com/iso/Peppermint-7-20161201-i386.iso">Download</a>
+
+                </p>
+
+            </div>
+
+
+
+            <div id="accordionFive">
+
+                <h4 id = "titleFive"> Others </h4>
+
+                <p id = "paragraphFive" class = "close">
+
+                    <!-- Debian -->
+
+                    Debian is a Unix-like computer operating system that is composed entirely of free software <br> <br>
+
+                    The Debian stable release branch is one of the most popular for personal computers <br> <br>
+
+                    You can download Debian 8.7.1 from the official site or from here: <br> <br> <br>
+
+                    Debian 8.7.1 (64 bit) - <a href="http://debian.cse.msu.edu/debian-cd/8.7.1/amd64/iso-cd/debian-8.7.1-amd64-CD-1.iso"> Download </a> <br> <br>
+
+                    Debian 8.7.1 (32 bit) - <a href="http://debian.cse.msu.edu/debian-cd/8.7.1/i386/iso-cd/debian-8.7.1-i386-CD-1.iso"> Download </a> <small></small>
+
+                    <!-- Ubuntu Mate -->
+
+                    Ubuntu MATE is a free and open-source Linux distribution and an official derivative of Ubuntu <br> <br>
+
+                    Its main differentiation from Ubuntu is that it uses the MATE desktop environment. <br> <br>
+
+                    You can download latest version of Ubuntu Mate from the official site or from here: <br> <br> <br>
+
+                    Ubuntu Mate (64 bit) - <a href="http://cdimage.ubuntu.com/ubuntu-mate/releases/16.04.2/release/ubuntu-mate-16.04.2-desktop-amd64.iso">Download</a> <br> <br>
+
+                    Ubuntu Mate (32 bit) - <a href="http://cdimage.ubuntu.com/ubuntu-mate/releases/16.04.2/release/ubuntu-mate-16.04.2-desktop-i386.iso">Download</a> <small></small>
+
+                    <!-- Fedora -->
+
+                    Fedora is an operating system based on the Linux kernel developed by the community <br> <br>
+
+                    As of February 2016, Fedora has an estimated 1.2 million users, including <a id = "linus" href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> <br> <br>
+
+                    You can download latest version of Fedora from the official site or from here: <br> <br> <br>
+
+                    Fedora (64 bit) - <a href="http://archives.fedoraproject.org/pub/archive/fedora/linux/core/6/x86_64/iso/FC-6-x86_64-DVD.iso">Download</a> <br> <br>
+
+                    Fedora (32 bit) - <a href="http://archives.fedoraproject.org/pub/archive/fedora/linux/core/6/i386/iso/FC-6-i386-DVD.iso">Download</a> <small></small>
+
+                    <!-- Arch Linux -->
+
+                    Arch Linux is a Linux distribution for computers based on i686 and x86-64 architectures. <br> <br>
+
+                    However, it is slowly phasing out support for the i686 architecture. <br> <br>
+
+                    Arch Linux is composed predominantly of free and open-source software. <br> <br>
+
+                    You can download latest version of Arch Linux for 64 bit systems from the official site or from here: <br> <br> <br>
+
+                    Arch Linux (64 bit) - <a href="http://mirrors.advancedhosters.com/archlinux/iso/2017.04.01/archlinux-2017.04.01-x86_64.iso">Download</a>
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </body>
+
+
+
+</html>
